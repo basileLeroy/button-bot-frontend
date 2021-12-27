@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width:100vw;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+}
+body .App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.bot {
+
+}
+.logo {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50% 50%;
+  position: relative;
+  background-image: url('images/bot-logo.png');
+  background-color: coral;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo .wave {
+  position: absolute;
+  top: 75%;
+  left: -50%;
+  width:400px;
+  height: 400px;
+  background-color: cornflowerblue;
+  border-radius: 25% 25%;
+  animation:spin 7s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform:rotate(360deg);
+  }
+}
