@@ -4,14 +4,14 @@ import axios from "axios";
 
 function App() {
     const [status, setStatus] = useState();
-
+    const origin = "https://button-bot-client.glitch.me/button-bot"
     useEffect(() => {
-        axios.get('http://localhost:9000/button-bot')
+        axios.get(origin)
             .then(res => {
                 setStatus(res.data.message);
                 console.log(status);
             })
-    }, []);
+    }, [status]);
 
 
   return (
