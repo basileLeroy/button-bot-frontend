@@ -4,7 +4,7 @@ import axios from "axios";
 
 function App() {
     const [status, setStatus] = useState();
-    const origin = "https://button-bot-client.glitch.me/button-bot"
+    const origin = "https://button-bot-api.glitch.me/button-bot";
     useEffect(() => {
         axios.get(origin)
             .then(res => {
